@@ -1,0 +1,3 @@
+<div class="grid-container">
+<app-task-item (onDeleteTask)="deleteTask(task)" (onToggleReminder)="toggleReminder(task)" *ngFor="let task of tasks" [task]="task"></app-task-item>
+</div>

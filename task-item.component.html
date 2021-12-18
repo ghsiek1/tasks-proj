@@ -1,0 +1,10 @@
+<div class="task" [ngClass]="{reminder: task.reminder}" (dblclick)="onToggle(task)">
+    <img class="img" src="https://buyitnowsa.com/wp-content/uploads/2020/11/nike-air-force-1-07-666qef.jpg">
+    <h3>
+        {{task.text}}
+        <button (click)="onDelete(task)"
+         [ngClass]="'cancelButton'"
+          type="button">delete</button>
+    </h3>
+    <p>{{task.day}}</p>
+</div>
